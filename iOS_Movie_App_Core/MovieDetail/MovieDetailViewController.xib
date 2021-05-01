@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailViewController" customModule="iOS_Movie_App_Core" customModuleProvider="target">
+            <connections>
+                <outlet property="adultLabel" destination="NbP-Ts-dLL" id="fWs-UE-7Dm"/>
+                <outlet property="imageView" destination="eAJ-KJ-HuM" id="fy4-Ky-APJ"/>
+                <outlet property="overViewLabel" destination="Mb6-Ip-lts" id="hUT-m1-TEw"/>
+                <outlet property="rating" destination="EYt-2j-N0G" id="hYn-Pa-zmv"/>
+                <outlet property="releaseDate" destination="Jcw-pf-Ffe" id="jPe-5Q-kzI"/>
+                <outlet property="titleLabel" destination="PLQ-qt-EVu" id="nvb-Nv-9RX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eAJ-KJ-HuM">
+                    <rect key="frame" x="50" y="30" width="275" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="Cce-Jl-D6H"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLQ-qt-EVu">
+                    <rect key="frame" x="50" y="200" width="275" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYt-2j-N0G">
+                    <rect key="frame" x="30" y="240.5" width="315" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-pf-Ffe">
+                    <rect key="frame" x="30" y="271" width="315" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbP-Ts-dLL">
+                    <rect key="frame" x="30" y="301.5" width="315" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb6-Ip-lts">
+                    <rect key="frame" x="30" y="332" width="315" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Mb6-Ip-lts" firstAttribute="trailing" secondItem="NbP-Ts-dLL" secondAttribute="trailing" id="02k-pW-mlW"/>
+                <constraint firstItem="PLQ-qt-EVu" firstAttribute="trailing" secondItem="eAJ-KJ-HuM" secondAttribute="trailing" id="3JQ-C6-ltk"/>
+                <constraint firstItem="Jcw-pf-Ffe" firstAttribute="top" secondItem="EYt-2j-N0G" secondAttribute="bottom" constant="10" id="3MK-65-NcA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EYt-2j-N0G" secondAttribute="trailing" constant="30" id="AUf-Fb-eFK"/>
+                <constraint firstItem="Mb6-Ip-lts" firstAttribute="leading" secondItem="NbP-Ts-dLL" secondAttribute="leading" id="Bvb-ro-KfY"/>
+                <constraint firstItem="EYt-2j-N0G" firstAttribute="top" secondItem="PLQ-qt-EVu" secondAttribute="bottom" constant="20" id="CYf-4d-8ok"/>
+                <constraint firstItem="NbP-Ts-dLL" firstAttribute="trailing" secondItem="Jcw-pf-Ffe" secondAttribute="trailing" id="DKH-eS-KOK"/>
+                <constraint firstItem="PLQ-qt-EVu" firstAttribute="leading" secondItem="eAJ-KJ-HuM" secondAttribute="leading" id="DcK-UK-0u8"/>
+                <constraint firstItem="EYt-2j-N0G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Jqe-8M-e7d"/>
+                <constraint firstItem="PLQ-qt-EVu" firstAttribute="top" secondItem="eAJ-KJ-HuM" secondAttribute="bottom" constant="20" id="OF6-0q-2vb"/>
+                <constraint firstItem="Jcw-pf-Ffe" firstAttribute="leading" secondItem="EYt-2j-N0G" secondAttribute="leading" id="PpP-xv-OON"/>
+                <constraint firstItem="eAJ-KJ-HuM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="QKD-wv-ySp"/>
+                <constraint firstItem="NbP-Ts-dLL" firstAttribute="leading" secondItem="Jcw-pf-Ffe" secondAttribute="leading" id="Rfw-n4-nbE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eAJ-KJ-HuM" secondAttribute="trailing" constant="50" id="UJd-QI-oRC"/>
+                <constraint firstItem="Jcw-pf-Ffe" firstAttribute="trailing" secondItem="EYt-2j-N0G" secondAttribute="trailing" id="YiG-E8-lsH"/>
+                <constraint firstItem="Mb6-Ip-lts" firstAttribute="top" secondItem="NbP-Ts-dLL" secondAttribute="bottom" constant="10" id="avR-4v-ME0"/>
+                <constraint firstItem="eAJ-KJ-HuM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="iaj-2i-psl"/>
+                <constraint firstItem="NbP-Ts-dLL" firstAttribute="top" secondItem="Jcw-pf-Ffe" secondAttribute="bottom" constant="10" id="xlj-GQ-h5a"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="145.27736131934034"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
